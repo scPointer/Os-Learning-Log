@@ -14,7 +14,7 @@
 
 - Platform库：目标平台(`Xen / KVM / Linux user-space`)也是一个模块，如果你想添加这样的模块则需要额外提供 `linker`
 
-![arch0.png](.\arch0.png)
+![arch0.png](./arch0.png)
 
 例：[GitHub - unikraft/lib-redis: Unikraft port of Redis in-memory data structure store](https://github.com/unikraft/lib-redis)
 
@@ -68,13 +68,13 @@ static const char *rootfs   = CONFIG_LIBVFSCORE_ROOTFS;
 
 > 这些 config 虽然类似 rust crate 的 feature，但是是可以（并且在代码中也经常）跨模块跨库引用的
 
-![build_uk.svg](.\build_uk.svg)
+![build_uk.svg](./build_uk.svg)
 
 ### Makefile.uk
 
-![arch2.png](.\arch2.png)
+![arch2.png](./arch2.png)
 
-![arch1.png](.\arch1.png) 
+![arch1.png](./arch1.png) 
 
 ### 外部依赖
 
@@ -92,4 +92,4 @@ static const char *rootfs   = CONFIG_LIBVFSCORE_ROOTFS;
 
 - 可以在生成后提供一些预设脚本。例如在生成`qemu / KVM` 镜像后可以有 `qemu-guest` 作为运行脚本
 
-![build_uk.svg](.\build_uk.svg)
+![build_uk.svg](./build_uk.svg)
