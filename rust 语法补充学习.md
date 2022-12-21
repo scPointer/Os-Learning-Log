@@ -46,6 +46,8 @@ export override RUSTFLAGS += $(patsubst%,--cfg %, $(THESEUS_CONFIG))
 
 ### 0x02 函数指针类型
 
+> from aero
+
 小写的 fn() 可用来表示函数指针类型，如：
 
 ```rust
@@ -59,6 +61,8 @@ pub enum SignalHandler {
 之前都是在参数里使用类似 `f: impl Fn(...) -> (...)` 或者 `where F: Fn(...) -> (...)` 的语法。
 
 ### 0x03  doctest 属性叠加
+
+> from aero
 
 如在注释里嵌入rust代码，但不运行运行，可以在 ````` 中使用如下属性，然后用逗号分隔：
 
